@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="spring.mvc.mapper.Homework_mapper">
+
+    <select id="Query_homework"  resultType="spring.mvc.Bean.Homework">
+        select * from s_homework
+    </select>
+    <insert id="addHomework" parameterType="spring.mvc.Bean.Homework">
+        insert into s_homework(id,title,content,create_time) values(#{id},#{title},#{content},#{create_time})
+    </insert>
+
+</mapper>

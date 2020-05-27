@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="spring.mvc.mapper.Student_mapper">
+
+    <insert id="addStudent" parameterType="spring.mvc.Bean.Student">
+        insert into s_student(id,name,create_time) values(#{id},#{name},#{create_time})
+    </insert>
+</mapper>
